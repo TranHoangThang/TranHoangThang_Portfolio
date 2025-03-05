@@ -6,7 +6,7 @@ const Navbar = () => {
   const [showMenu, setShowmenu] = useState(true);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between text-white px-10 md:px-20 bg-[#171D32] h-20">
+    <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between text-white px-10 md:px-20 bg-[#171D32] h-10 md:h-20">
       <span className="text-xl font-bold tracking-wide flex items-center gap-2">
         <span className="bg-gradient-to-r from-blue-400 via-blue-500 to-blue-700 bg-clip-text text-transparent animate-gradient">
           Portfolio
