@@ -28,7 +28,7 @@ const Footer = () => {
       </li>
       <li>
         <a 
-          href="https://zalo.me/your-zalo-id"
+          href="https://zalo.me/0906332424"
           target="_blank" 
           rel="noopener noreferrer"
           className="flex gap-2 items-center text-white hover:opacity-80 transition"
