@@ -3,10 +3,19 @@ import { useEffect, useState } from "react";
 import "./cc.css";
 
 function CustomCursor() {
+  // Kiểm tra ngay tại thời điểm render
+  const isMobile =
+    typeof window !== "undefined" &&
+    ( "ontouchstart" in window ||
+      navigator.maxTouchPoints > 0 ||
+      window.matchMedia("(pointer: coarse)").matches );
+
+  // Nếu là mobile, không render custom cursor
+  if (isMobile) return null;
+
   const cursorX = useMotionValue(0);
   const cursorY = useMotionValue(0);
   
-
   const smoothCursorX = useSpring(cursorX, { stiffness: 8000, damping: 800 });
   const smoothCursorY = useSpring(cursorY, { stiffness: 8000, damping: 800 });
 
